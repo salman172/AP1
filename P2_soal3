@@ -1,0 +1,23 @@
+// perhitungan bilangan 
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+  int bil_A ,bil_B , Jum , Kali;
+ 
+  cout <<"masukan Bilangan1";
+  cout <<"masuk Bilangan2";
+  cin >> bil_A;
+  cin >> bil_B;
+  
+  Jum   = bil_A+bil_B;
+  Kali  = bil_A*bil_B;
+  
+  
+ 
+  cout <<"Jum = "<<Jum<<'\n';
+  cout <<"Kali= "<<Kali<<'\n';
+  
+  return 0;
+}
