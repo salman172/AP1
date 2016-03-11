@@ -23,3 +23,5 @@ int main ()
   cout <<"s = " <<s<<'\n'; 
   cout <<"Hasil dari 5 % 7 adalah " << 5%7<<'\n';  
  //penggunaan operator sisa
+ return 0;
+}
