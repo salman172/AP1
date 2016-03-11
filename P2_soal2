@@ -1,0 +1,12 @@
+2.// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string name;
+  
+  std::cout << "Masukan Nama!!! ";
+  getline (std::cin, name);
+  return 0;
+}
