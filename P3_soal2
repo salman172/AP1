@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double panjang,lebar,jari_jari,luas_segiempat,luas_setlingkaran,luas_total;
+
+
+
+    cout<<"menghitung luas bangun datar"<<endl;
+    cout<<"panjang   :";
+    cin>>panjang;
+    cout<<"lebar     :";
+    cin>>lebar;
+    cout<<"jari-jari :";
+    cin>>jari_jari;
+    luas_segiempat=panjang*lebar;
+    luas_setlingkaran=3.14*jari_jari*jari_jari/2;
+    luas_total=luas_segiempat+luas_setlingkaran;
+    cout<<endl;
+    cout<<"HASIL"<<endl;
+    cout<<"luas segi empat         = "<<luas_segiempat<<endl;
+    cout<<"luas setengah lingkaran = "<<luas_setlingkaran<<endl;
+    cout<<"luas bangun datar       = "<<luas_total<<endl;
+
+
+
+}
