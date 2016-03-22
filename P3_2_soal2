@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+  int harga_awal,harga_akhir,diskon_tanggal,diskon_umur;
+  harga_awal=9800000;
+  int umur,tanggal;
+  string nama;
+  cout<<"Harga"<<endl;
+  cout<<"Harga Normal : "<<harga_awal<<endl;
+  cout<<"pembelian HP"<<endl;
+  cout<<"masukan nama : ";
+  cin>>nama;
+  cout<<"Tanggal lahir: ";
+  cin>>tanggal;
+  cout<<"umur         : ";
+  cin>>umur;
+  diskon_tanggal=(harga_awal*tanggal/100);
+  cout<<"diskon sesuai tanggal lahir : "<<diskon_tanggal<<endl;
+  diskon_umur=(harga_awal*umur/100);
+  cout<<"diskon sesuai umur : "<<diskon_umur<<endl;
+  cout<<"Harga akhir : "<<harga_awal-diskon_tanggal-diskon_umur;
+
+
+
+
+
+}
