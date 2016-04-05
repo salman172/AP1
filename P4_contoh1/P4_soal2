@@ -1,0 +1,20 @@
+//menentukan bilangan ganjil dan genap
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int bilangan;
+
+    cout<<"Masukan bilangan bulat yang akan diperiksa : ";
+    cin>>bilangan;
+
+    if(bilangan%2==0){
+        cout<<endl<<bilangan<<" adalah bilangan genap\n";
+    }
+    else{
+        cout<<endl<<bilangan<<" adalah bilangan ganjil\n";
+    }
+
+return 0;
+}
