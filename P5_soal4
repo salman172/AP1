@@ -1,0 +1,23 @@
+//menentukan bilangan bulat
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int bilangan;
+
+    cout<<"Masukan Bilangan : ";
+    cin>>bilangan;
+
+    if(bilangan==0){
+        cout<<endl<<bilangan<<" adalah bilangan nol"<<endl;
+    }
+    else if(bilangan>=0){
+        cout<<endl<<bilangan<<" adalah bilangan positif"<<endl;
+    }
+    else{
+        cout<<endl<<bilangan<<" adalah bilangan negatif"<<endl;
+    }
+
+return 0;
+}
