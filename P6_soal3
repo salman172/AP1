@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main(){
+    string nama;
+    long jumlah_rumah45,bonus45,jumlah_bonus45;
+    long jumlah_rumah54,bonus54,jumlah_bonus54;
+    long jumlah_rumah70,bonus70,jumlah_bonus70;
+    long total_bonus;
+
+    cout<<"Masukan Nama Pegawai : ";
+    getline(cin,nama);
+
+    cout<<"Jumlah rumah type 45 : ";
+    cin>>jumlah_rumah45;
+    if(jumlah_rumah45>5){
+        bonus45=500000;
+    }else{bonus45=250000;}
+
+    cout<<"Jumlah rumah type 54 : ";
+    cin>>jumlah_rumah54;
+    if(jumlah_rumah54>5){
+        bonus54=1000000;
+    }else{bonus54=500000;}
+
+    cout<<"Jumlah rumah type 70 : ";
+    cin>>jumlah_rumah70;
+    if(jumlah_rumah70>5){
+        bonus70=1250000;
+    }else{bonus70=1000000;}
+
+    jumlah_bonus45=bonus45*jumlah_rumah45;
+    jumlah_bonus54=bonus54*jumlah_rumah54;
+    jumlah_bonus70=bonus70*jumlah_rumah70;
+    total_bonus=jumlah_bonus45+jumlah_bonus54+jumlah_bonus70;
+
+    cout<<endl<<"Karyawan "<<nama<<", menjualkan rumah sebagai berikut :"<<endl;
+    cout<<"--------------------------------------------------------------------------"<<endl;
+    cout<<endl<<"Type Rumah     Jumlah rumah yang terjual    Bonus/jumlah rumah terjual"<<endl;
+    cout<<"   45                  "<<jumlah_rumah45<<" x Rp."<<bonus45<<"                 Rp."<<jumlah_bonus45<<endl;
+    cout<<"   54                  "<<jumlah_rumah54<<" x Rp."<<bonus54<<"                 Rp."<<jumlah_bonus54<<endl;
+    cout<<"   70                  "<<jumlah_rumah70<<" x Rp."<<bonus70<<"                 Rp."<<jumlah_bonus70<<endl;
+    cout<<endl<<"Total Bonus Yang Diterima "<<nama<<" = Rp."<<total_bonus<<endl;
+
+
+
+
+
+return 0;
+}
