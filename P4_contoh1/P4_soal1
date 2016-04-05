@@ -1,0 +1,21 @@
+//memberikan masukan informasi agar user memasukan
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int nilai;
+
+    cout<<"Masukan sebuah bilangan bulat : ";
+    cin>>nilai;
+
+    if(nilai>0){
+        cout<<"\nNilai yang anda masukan adalah bilangan positif\n";
+    }
+    else if(nilai==0){
+        cout<<"\nNilai yang anda masukan adalah bilangan 0\n";
+     }
+     else{cout<<"\nNilai yang anda masukan adalah bilangan negatif\n";}
+
+return 0;
+}
