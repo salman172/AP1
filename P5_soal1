@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    string nama;
+    int golongan,lama_kerja,tahun_masuk,incentive,gaji_pokok,total_gaji;
+    const int tahun_sekarang=2016;
+
+    cout<<"Nama Anda   : ";
+    getline(cin, nama);
+    cout<<"Tahun Masuk : ";
+    cin>>tahun_masuk;
+    cout<<"Golongan    : ";
+    cin>>golongan;
+
+    lama_kerja=tahun_sekarang-tahun_masuk;
+
+    switch (golongan){
+    case 1 :
+        gaji_pokok=500000;
+        break;
+    case 2 :
+        gaji_pokok=750000;
+        break;
+    case 3 :
+        gaji_pokok=1000000;
+        break;
+    case 4 :
+        gaji_pokok=1500000;
+        break;
+    }
+
+    if(lama_kerja<1){
+        incentive=250000;
+    }
+    else if((lama_kerja<=2) && (lama_kerja>=1)){
+        incentive=500000;
+    }
+    else if((lama_kerja<=4) && (lama_kerja>=3)){
+        incentive=1000000;
+
+    }
+    else{incentive=1500000;}
+
+    total_gaji=gaji_pokok+incentive;
+
+    cout<<endl<<"-----HASIL-----"<<endl;
+    cout<<"Nama            : "<<nama<<endl;
+    cout<<"Golongan        : "<<golongan<<endl;
+    cout<<"Tahun Masuk     : "<<tahun_masuk<<endl;
+    cout<<"Masa Lama Kerja : "<<tahun_sekarang<<" - "<<tahun_masuk<<endl;
+    cout<<"Total Gaji      : "<<gaji_pokok<< " + "<<incentive<<" = "<<total_gaji<<endl;
+
+return 0;
