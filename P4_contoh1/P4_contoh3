@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    double nilai;
+
+    char indeks2,indeks;
+    indeks2='B';
+
+    cout<<"Masukan nilai yang diperoleh : ";
+    cin>>nilai;
+
+    if(nilai>=85){
+        indeks='A';
+    }
+    else if(nilai>=70){
+        indeks='B';
+    }
+    else if(nilai>=55){
+        indeks='C';
+    }
+    else if(nilai>=40){
+        indeks='D';
+    }else{indeks='E';}
+
+    cout<<endl<<"Nilai indeks dari nilai "<<nilai<<" adalah "<<indeks<<endl;
+
+return 0;
+}
