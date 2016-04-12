@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+    int angka;
+    int total=0;
+    int i;
+
+    cout<<"Masukan Banyak Angka   : ";
+    cin>>n;
+    
+
+    for(i=1;i<=n;i++){
+        cout<<"Masukan Angka "<<i<<" : ";
+        cin>>angka;
+        total=total+angka;
+    }
+    cout<<endl<<"Total Semua Angka = " <<total<<endl;
+
+return 0;
+}
