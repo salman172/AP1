@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int c;
+    int i;
+
+    cout<<"Naik broo....."<<endl<<endl;
+    for(i=0;i<=10;i++){
+        if(i==10){
+            cout<<i;
+        }else{
+        cout<<i<<",";}
+    }
+    cout<<endl<<endl<<"Menurunnya nih .... "<<endl<<endl;
+
+    for(c=10;c>=0;c--){
+            if(c==0){
+            cout<<c;
+        }else{
+        cout<<c<<",";}
+    }
+    cout<<endl;
+
+return 0;
+}
